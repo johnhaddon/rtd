@@ -12,7 +12,7 @@ Contents:
    :maxdepth: 2
 
    test
-
+   nodeReference/index
 
 Indices and tables
 ==================
