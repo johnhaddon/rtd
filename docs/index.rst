@@ -3,8 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Gaffer's documentation!
+Welcome, intrepid Gafferer!
 ==================================
+
+Gaffer's developers and users are men and women of few words. Here you'll find any documentation they've managed to write on the side whilst developing quality software and using it to make feature films.
 
 .. toctree::
    :maxdepth: 1
