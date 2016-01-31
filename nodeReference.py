@@ -21,8 +21,7 @@ def plugs( node ) :
 			if not description :
 				continue
 
-			relativeName = plug.relativeName( node )
-			result += "##%s %s\n\n %s\n\n" % ( "#" * relativeName.count( "." ), relativeName, description )
+			result += "## %s\n\n %s\n\n" % ( plug.relativeName( node ), description )
 
 			if type( plug ) in ( Gaffer.Plug, Gaffer.ValuePlug, Gaffer.CompoundDataPlug ) :
 				result += walk( plug )

@@ -26,14 +26,14 @@ used by dispatchers to control default frame
 ranges, and by the UI to define the range of the
 time slider.
 
-### frameRange.start
+## frameRange.start
 
  The start frame. This doesn't enforce anything,
 but is typically used by dispatchers to control
 default frame ranges, and by the UI to define
 the range of the time slider.
 
-### frameRange.end
+## frameRange.end
 
  The end frame. This doesn't enforce anything,
 but is typically used by dispatchers to control

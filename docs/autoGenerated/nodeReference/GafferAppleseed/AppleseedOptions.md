@@ -28,149 +28,149 @@ so users are free to do as they wish.
 as children of this plug via the user interface, or using the CompoundDataPlug API via
 python.
 
-### options.renderPasses
+## options.renderPasses
 
  Number of render passes.
 When using photon mapping this is the number of
 progressive refinement passes used.
 
-### options.sampler
+## options.sampler
 
  Sampler to use when generating samples
 
-### options.aaSamples
+## options.aaSamples
 
  Number of anti-aliasing samples
 
-### options.lightingEngine
+## options.lightingEngine
 
  Lighting engine used when rendering
 
-### options.meshFileFormat
+## options.meshFileFormat
 
  Mesh file format to use when exporting scenes to appleseed.
 It is recommended to set it to BinaryMesh as it is more efficient than Obj.
 
-### options.shadingOverride
+## options.shadingOverride
 
  Replaces all shaders in the scene by special
 diagnostics shaders that can visualize uvs, normals, ...
 Useful for debugging scenes.
 
-### options.environmentEDF
+## options.environmentEDF
 
  Light to use as the environment.
 
-### options.environmentEDFBackground
+## options.environmentEDFBackground
 
  Whether or not the environment is visible in the background.
 
-### options.drtIBL
+## options.drtIBL
 
  Enable image-based lighting
 
-### options.drtMaxBounces
+## options.drtMaxBounces
 
  Maximum ray trace depth.If set to zero, use an unlimited number of bounces
 
-### options.drtLightingSamples
+## options.drtLightingSamples
 
  Number of samples used to estimate direct lighting
 
-### options.drtIBLSamples
+## options.drtIBLSamples
 
  Number of samples used to estimate environment lighting
 
-### options.ptDirectLighting
+## options.ptDirectLighting
 
  Enable direct lighting
 
-### options.ptIBL
+## options.ptIBL
 
  Enable image-based lighting
 
-### options.ptCaustics
+## options.ptCaustics
 
  Enable caustics
 
-### options.ptMaxBounces
+## options.ptMaxBounces
 
  Maximum number of path bounces.If set to zero, use an unlimited number of bounces
 
-### options.ptLightingSamples
+## options.ptLightingSamples
 
  Number of samples used to estimate direct lighting
 
-### options.ptIBLSamples
+## options.ptIBLSamples
 
  Number of samples used to estimate environment lighting
 
-### options.ptMaxRayIntensity
+## options.ptMaxRayIntensity
 
  Clamp intensity of rays (after the first bounce) to this value to reduce fireflies.Set to zero to disable
 
-### options.photonType
+## options.photonType
 
  TODO: Not documented yet
 
-### options.sppmDirectLighting
+## options.sppmDirectLighting
 
  Method used to estimate direct lighting
 
-### options.sppmIBL
+## options.sppmIBL
 
  Enable image-based lighting
 
-### options.sppmCaustics
+## options.sppmCaustics
 
  Enable caustics
 
-### options.sppmPhotonMaxBounces
+## options.sppmPhotonMaxBounces
 
  Maximum number of photon bounces.If set to zero, use an unlimited number of bounces
 
-### options.sppmPathMaxBounces
+## options.sppmPathMaxBounces
 
  Maximum number of path bounces.If set to zero, use an unlimited number of bounces
 
-### options.sppmLightPhotons
+## options.sppmLightPhotons
 
  Number of photons per render pass
 
-### options.sppmEnvPhotons
+## options.sppmEnvPhotons
 
  Number of environment photons per render pass
 
-### options.sppmInitialRadius
+## options.sppmInitialRadius
 
  Initial photon gathering radius in percent of the scene diameter.
 
-### options.sppmMaxPhotons
+## options.sppmMaxPhotons
 
  Maximum number of photons used to estimate radiance
 
-### options.sppmAlpha
+## options.sppmAlpha
 
  Evolution rate of photon gathering radius
 
-### options.searchPath
+## options.searchPath
 
  The filesystem paths where shaders and textures
 are searched for.
 
-### options.numThreads
+## options.numThreads
 
  Number of threads to use for rendering.Set to zero to use all CPU cores
 
-### options.interactiveRenderFps
+## options.interactiveRenderFps
 
  Maximum progressive rendering update rate in frames per second
 
-### options.textureMem
+## options.textureMem
 
  Texture cache size in bytes
 
-### options.tileOrdering
+## options.tileOrdering
 
  Tile rendering order
 

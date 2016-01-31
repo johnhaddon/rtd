@@ -32,7 +32,7 @@ processed. A Filter node should be connected here.
 attributes may be added as children of this plug via the user
 interface, or using the CompoundDataPlug API via python.
 
-### attributes.visibility
+## attributes.visibility
 
  Whether or not the object can be seen - invisible objects are
 not sent to the renderer at all. Typically more fine
@@ -42,32 +42,32 @@ Note that making a parent location invisible will
 always make all the children invisible too, regardless
 of their visibility settings.
 
-### attributes.doubleSided
+## attributes.doubleSided
 
  Whether or not the object can be seen from both sides.
 Single sided objects appear invisible when seen from
 the back.
 
-### attributes.transformBlur
+## attributes.transformBlur
 
  Whether or not transformation animation on the
 object is taken into account in the rendered image.
 Use the transformBlurSegments plug to specify the number
 of segments used to represent the motion.
 
-### attributes.transformBlurSegments
+## attributes.transformBlurSegments
 
  The number of segments of transform animation to
 pass to the renderer when transformBlur is on.
 
-### attributes.deformationBlur
+## attributes.deformationBlur
 
  Whether or not deformation animation on the
 object is taken into account in the rendered image.
 Use the deformationBlurSegments plug to specify the
 number of segments used to represent the motion.
 
-### attributes.deformationBlurSegments
+## attributes.deformationBlurSegments
 
  The number of segments of transform animation to
 pass to the renderer when transformBlur is on.

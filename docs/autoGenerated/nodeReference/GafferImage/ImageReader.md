@@ -48,11 +48,11 @@ but they can also be clamped to the start frame, or
 return a black image which matches the data window
 and display window of the start frame.
 
-### start.mode
+## start.mode
 
  The mode used detemine the mask behaviour for the start frame.
 
-### start.frame
+## start.frame
 
  The start frame of the masked range.
 
@@ -64,11 +64,11 @@ but they can also be clamped to the end frame, or
 return a black image which matches the data window
 and display window of the end frame.
 
-### end.mode
+## end.mode
 
  The mode used detemine the mask behaviour for the end frame.
 
-### end.frame
+## end.frame
 
  The end frame of the masked range.
 

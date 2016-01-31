@@ -32,39 +32,39 @@ processed. A Filter node should be connected here.
 attributes may be added as children of this plug via the user
 interface, or using the CompoundDataPlug API via python.
 
-### attributes.cameraVisibility
+## attributes.cameraVisibility
 
  Whether or not the object is visible to camera
 rays. To hide an object completely, use the
 visibility settings on the StandardAttributes
 node instead.
 
-### attributes.shadowVisibility
+## attributes.shadowVisibility
 
  Whether or not the object is visible to shadow
 rays (whether or not it casts shadows).
 
-### attributes.reflectedVisibility
+## attributes.reflectedVisibility
 
  Whether or not the object is visible in
 tight mirror reflections.
 
-### attributes.refractedVisibility
+## attributes.refractedVisibility
 
  Whether or not the object is visible in
 refractions.
 
-### attributes.diffuseVisibility
+## attributes.diffuseVisibility
 
  Whether or not the object is visible to diffuse
 rays - whether it casts bounce light or not.
 
-### attributes.glossyVisibility
+## attributes.glossyVisibility
 
  Whether or not the object is visible in
 soft specular reflections.
 
-### attributes.subdivIterations
+## attributes.subdivIterations
 
  The maximum number of subdivision
 steps to apply when rendering subdivision
@@ -77,7 +77,7 @@ Use the MeshType node to ensure that a
 mesh is treated as a subdivision surface
 in the first place.
 
-### attributes.subdivPixelError
+## attributes.subdivPixelError
 
  The maximum allowable deviation from the true
 surface and the subdivided approximation. How
@@ -88,7 +88,7 @@ number of subdivision steps, so if changing the
 pixel error setting appears to have no effect,
 you may need to raise the maximum.
 
-### attributes.subdivAdaptiveMetric
+## attributes.subdivAdaptiveMetric
 
  The metric used when performing adaptive
 subdivision as specified by the pixel error.

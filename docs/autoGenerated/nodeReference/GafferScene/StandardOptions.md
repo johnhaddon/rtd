@@ -27,27 +27,27 @@ so users are free to do as they wish.
 as children of this plug via the user interface, or using the CompoundDataPlug API via
 python.
 
-### options.renderCamera
+## options.renderCamera
 
  The primary camera to be used for rendering. If this
 is not specified, then a default orthographic camera
 positioned at the origin is used.
 
-### options.renderResolution
+## options.renderResolution
 
  The resolution of the image to be rendered. Use the
 resolution multiplier as a convenient way to temporarily
 render at multiples of this resolution.
 
-### options.pixelAspectRatio
+## options.pixelAspectRatio
 
  The aspect ratio (x/y) of the pixels in the rendered image.
 
-### options.resolutionMultiplier
+## options.resolutionMultiplier
 
  Multiplier applied to the render resolution.
 
-### options.renderCropWindow
+## options.renderCropWindow
 
  Limits the render to a region of the image. The rendered
 image will have the same resolution as usual, but areas
@@ -56,7 +56,7 @@ range from 0,0 at the top left of the image to 1,1 at the
 bottom right. The crop window tool in the viewer may be
 used to set this interactively.
 
-### options.overscan
+## options.overscan
 
  Adds extra pixels to the sides of the rendered image.
 This can be useful when camera shake or blur will be
@@ -65,34 +65,34 @@ as a whole - use the overscanTop, overscanBottom, overscanLeft
 and overscanRight plugs to specify the amount of overscan
 on each side of the image.
 
-### options.overscanTop
+## options.overscanTop
 
  The amount of overscan at the top of the image. Specified
 as a 0-1 proportion of the original image height.
 
-### options.overscanBottom
+## options.overscanBottom
 
  The amount of overscan at the bottom of the image. Specified
 as a 0-1 proportion of the original image height.
 
-### options.overscanLeft
+## options.overscanLeft
 
  The amount of overscan at the left of the image. Specified
 as a 0-1 proportion of the original image width.
 
-### options.overscanRight
+## options.overscanRight
 
  The amount of overscan at the right of the image. Specified
 as a 0-1 proportion of the original image width.
 
-### options.cameraBlur
+## options.cameraBlur
 
  Whether or not camera motion is taken into
 account in the renderered image. To specify the
 number of segments to use for camera motion, use
 a StandardAttributes node filtered for the camera.
 
-### options.transformBlur
+## options.transformBlur
 
  Whether or not transform motion is taken into
 account in the renderered image. To specify the
@@ -100,7 +100,7 @@ number of transform segments to use for each
 object in the scene, use a StandardAttributes node
 with appropriate filters.
 
-### options.deformationBlur
+## options.deformationBlur
 
  Whether or not deformation motion is taken into
 account in the renderered image. To specify the
@@ -108,7 +108,7 @@ number of deformation segments to use for each
 object in the scene, use a StandardAttributes node
 with appropriate filters.
 
-### options.shutter
+## options.shutter
 
  The interval over which the camera shutter is open.
 Measured in frames, and specified relative to the

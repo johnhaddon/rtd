@@ -32,43 +32,43 @@ processed. A Filter node should be connected here.
 attributes may be added as children of this plug via the user
 interface, or using the CompoundDataPlug API via python.
 
-### attributes.cameraVisibility
+## attributes.cameraVisibility
 
  Whether or not the object is visible to camera
 rays. To hide an object completely, use the
 visibility settings on the StandardAttributes
 node instead.
 
-### attributes.lightVisibility
+## attributes.lightVisibility
 
  Whether or not the object is visible to light
 rays (whether or not it is visible to photons).
 
-### attributes.shadowVisibility
+## attributes.shadowVisibility
 
  Whether or not the object is visible to shadow
 rays (whether or not it casts shadows).
 
-### attributes.diffuseVisibility
+## attributes.diffuseVisibility
 
  Whether or not the object is visible to diffuse
 rays - whether it casts bounce light or not.
 
-### attributes.specularVisibility
+## attributes.specularVisibility
 
  Whether or not the object is visible in
 tight mirror reflections and refractions.
 
-### attributes.glossyVisibility
+## attributes.glossyVisibility
 
  Whether or not the object is visible in
 soft specular reflections and refractions.
 
-### attributes.shadingSamples
+## attributes.shadingSamples
 
  Number of samples to use when computing shading for the object.
 
-### attributes.alphaMap
+## attributes.alphaMap
 
  Specifies a grayscale texture than can be used to efficiently discard
 unwanted parts of the surface of the object while computing ray intersections.

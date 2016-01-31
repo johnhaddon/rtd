@@ -33,11 +33,11 @@ not be executed until after this node.
  Container for custom plugs which dispatchers use to
 control their behaviour.
 
-### dispatcher.batchSize
+## dispatcher.batchSize
 
  Maximum number of frames to batch together when dispatching tasks.
 
-### dispatcher.immediate
+## dispatcher.immediate
 
  Causes this node to be executed immediately upon dispatch,
 rather than have its execution be scheduled normally by

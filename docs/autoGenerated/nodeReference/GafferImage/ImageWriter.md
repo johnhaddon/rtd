@@ -31,11 +31,11 @@ not be executed until after this node.
  Container for custom plugs which dispatchers use to
 control their behaviour.
 
-### dispatcher.batchSize
+## dispatcher.batchSize
 
  Maximum number of frames to batch together when dispatching tasks.
 
-### dispatcher.immediate
+## dispatcher.immediate
 
  Causes this node to be executed immediately upon dispatch,
 rather than have its execution be scheduled normally by
@@ -68,15 +68,15 @@ as a placeholder for the frame numbers.
 
  Format options specific to OpenEXR files.
 
-### openexr.mode
+## openexr.mode
 
  The write mode for the OpenEXR file - scanline or tiled data.
 
-### openexr.compression
+## openexr.compression
 
  The compression method to use when writing the OpenEXR file.
 
-### openexr.dataType
+## openexr.dataType
 
  The data type to be written to the OpenEXR file.
 
@@ -84,7 +84,7 @@ as a placeholder for the frame numbers.
 
  Format options specific to DPX files.
 
-### dpx.dataType
+## dpx.dataType
 
  The data type to be written to the DPX file.
 
@@ -92,15 +92,15 @@ as a placeholder for the frame numbers.
 
  Format options specific to TIFF files.
 
-### tiff.mode
+## tiff.mode
 
  The write mode for the TIFF file - scanline or tiled data.
 
-### tiff.compression
+## tiff.compression
 
  The compression method to use when writing the TIFF file.
 
-### tiff.dataType
+## tiff.dataType
 
  The data type to be written to the TIFF file.
 
@@ -108,11 +108,11 @@ as a placeholder for the frame numbers.
 
  Format options specific to Field3D files.
 
-### field3d.mode
+## field3d.mode
 
  The write mode for the Field3D file - scanline or tiled data.
 
-### field3d.dataType
+## field3d.dataType
 
  The data type to be written to the Field3D file.
 
@@ -120,7 +120,7 @@ as a placeholder for the frame numbers.
 
  Format options specific to FITS files.
 
-### fits.dataType
+## fits.dataType
 
  The data type to be written to the FITS file.
 
@@ -128,7 +128,7 @@ as a placeholder for the frame numbers.
 
  Format options specific to IFF files.
 
-### iff.mode
+## iff.mode
 
  The write mode for the IFF file - scanline or tiled data.
 
@@ -136,7 +136,7 @@ as a placeholder for the frame numbers.
 
  Format options specific to Jpeg files.
 
-### jpeg.compressionQuality
+## jpeg.compressionQuality
 
  The compression quality for the Jpeg file to be written.
 A value between 0 (low quality, high compression) and
@@ -146,7 +146,7 @@ A value between 0 (low quality, high compression) and
 
  Format options specific to Jpeg2000 files.
 
-### jpeg2000.dataType
+## jpeg2000.dataType
 
  The data type to be written to the Jpeg2000 file.
 
@@ -154,11 +154,11 @@ A value between 0 (low quality, high compression) and
 
  Format options specific to PNG files.
 
-### png.compression
+## png.compression
 
  The compression method to use when writing the PNG file.
 
-### png.compressionLevel
+## png.compressionLevel
 
  The compression level of the PNG file. This is a value between
 0 (no compression) and 9 (most compression).
@@ -167,7 +167,7 @@ A value between 0 (low quality, high compression) and
 
  Format options specific to RLA files.
 
-### rla.dataType
+## rla.dataType
 
  The data type to be written to the RLA file.
 
@@ -175,7 +175,7 @@ A value between 0 (low quality, high compression) and
 
  Format options specific to SGI files.
 
-### sgi.dataType
+## sgi.dataType
 
  The data type to be written to the SGI file.
 
@@ -183,7 +183,7 @@ A value between 0 (low quality, high compression) and
 
  Format options specific to Targa files.
 
-### targa.compression
+## targa.compression
 
  The compression method to use when writing the Targa file.
 
@@ -191,7 +191,7 @@ A value between 0 (low quality, high compression) and
 
  Format options specific to WebP files.
 
-### webp.compressionQuality
+## webp.compressionQuality
 
  The compression quality for the WebP file to be written.
 A value between 0 (low quality, high compression) and
