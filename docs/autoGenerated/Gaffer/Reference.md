@@ -1,0 +1,9 @@
+# Reference
+
+References a node network stored in another file. This can be used
+to share resources among scripts, build powerful non-linear workflows,
+and as the basis for custom asset management.
+
+To generate a file to be referenced, build a network inside a Box
+node and then export it for referencing.
+
