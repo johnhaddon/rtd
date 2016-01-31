@@ -3,30 +3,30 @@
 Applies a transformation to the local matrix
 of all locations matched by the filter.
 
-## user 
+## user
 
  Container for user-defined plugs. Nodes
 should never make their own plugs here,
-so users are free to do as they wish. 
+so users are free to do as they wish.
 
-## out 
+## out
 
- The processed output scene. 
+ The processed output scene.
 
-## enabled 
+## enabled
 
- The on/off state of the node. When it is off, the node outputs the input scene unchanged. 
+ The on/off state of the node. When it is off, the node outputs the input scene unchanged.
 
-## in 
+## in
 
- The input scene 
+ The input scene
 
-## filter 
+## filter
 
  The filter used to control which parts of the scene are
-processed. A Filter node should be connected here. 
+processed. A Filter node should be connected here.
 
-## space 
+## space
 
  The space in which the transformation is specified.
 Note that no matter which space is chosen, only the
@@ -54,9 +54,9 @@ Reset Local
 Reset World
 :       The transformation is specified as an absolute matrix
         in world space. Each of the filtered locations will
-        be moved to this absolute position. 
+        be moved to this absolute position.
 
-## transform 
+## transform
 
- The transform to be applied. 
+ The transform to be applied.
 

@@ -2,33 +2,29 @@
 
 Parents one scene hierarchy into another.
 
-## user 
+## user
 
  Container for user-defined plugs. Nodes
 should never make their own plugs here,
-so users are free to do as they wish. 
+so users are free to do as they wish.
 
-## out 
+## out
 
- The processed output scene. 
+ The processed output scene.
 
-## enabled 
+## enabled
 
- The on/off state of the node. When it is off, the node outputs the input scene unchanged. 
+ The on/off state of the node. When it is off, the node outputs the input scene unchanged.
 
-## in 
+## in
 
- The input scene 
+ The input scene
 
-## parent 
+## parent
 
- The location which the child is parented under. 
+ The location which the child is parented under.
 
-## __mapping 
+## child
 
- None 
-
-## child 
-
- The child hierarchy to be parented. 
+ The child hierarchy to be parented.
 

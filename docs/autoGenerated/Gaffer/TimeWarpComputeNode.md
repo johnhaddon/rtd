@@ -5,21 +5,21 @@ the following formula :
 
 `upstreamFrame = frame * speed + offset`
 
-## user 
+## user
 
  Container for user-defined plugs. Nodes
 should never make their own plugs here,
-so users are free to do as they wish. 
+so users are free to do as they wish.
 
-## enabled 
+## enabled
 
- Turns the node on and off. 
+ Turns the node on and off.
 
-## speed 
+## speed
 
- Multiplies the current frame value. 
+ Multiplies the current frame value.
 
-## offset 
+## offset
 
- Adds to the current frame value (after multiplication with speed). 
+ Adds to the current frame value (after multiplication with speed).
 

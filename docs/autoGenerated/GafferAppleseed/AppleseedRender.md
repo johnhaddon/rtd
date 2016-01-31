@@ -5,55 +5,70 @@ appleseed renderer. This is done in two phases -
 first the scene geometry is exported to mesh files and an appleseed project
 is generated, and then appleseed is invoked to render it.
 
-## user 
+## user
 
  Container for user-defined plugs. Nodes
 should never make their own plugs here,
-so users are free to do as they wish. 
+so users are free to do as they wish.
 
-## preTasks 
+## preTasks
 
  Input connections to upstream nodes which must be
-executed before this node. 
+executed before this node.
 
-## postTasks 
+## postTasks
 
  Input connections to nodes which must be
 executed after this node, but which don't
-need to be executed before downstream nodes. 
+need to be executed before downstream nodes.
 
-## task 
+## task
 
  Output connections to downstream nodes which must
-not be executed until after this node. 
+not be executed until after this node.
 
-## dispatcher 
+## dispatcher
 
  Container for custom plugs which dispatchers use to
-control their behaviour. 
+control their behaviour.
 
-## in 
+### dispatcher.batchSize
 
- The scene to be rendered. 
+ Maximum number of frames to batch together when dispatching tasks.
 
-## out 
+### dispatcher.immediate
 
- A pass-through of the input scene. 
+ Causes this node to be executed immediately upon dispatch,
+rather than have its execution be scheduled normally by
+the dispatcher. For instance, when using the LocalDispatcher,
+the node will be executed immediately in the dispatching process
+and not in a background process as usual.
 
-## mode 
+When a node is made immediate, all upstream nodes are automatically
+considered to be immediate too, regardless of their settings.
+
+## in
+
+ The scene to be rendered.
+
+## out
+
+ A pass-through of the input scene.
+
+## mode
 
  When in the standard "Render" mode, an appleseed project
 is generated and then renderered in appleseed.
 Alternatively, just the appleseed project can be generated
 and then another method can be used to post-process
 it or launch the render - a SystemCommand node may
-be useful for this. 
+be useful for this.
 
-## fileName 
+## fileName
 
- The name of the appleseed project file to be generated. 
+ The name of the appleseed project file to be generated.
 
-## verbosity 
+## verbosity
 
- Controls the verbosity of the appleseed renderer output. 
+ Controls the verbosity of the appleseed renderer output.
 

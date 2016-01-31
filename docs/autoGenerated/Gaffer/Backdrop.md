@@ -5,23 +5,23 @@ coloured backdrop with optional text. Selecting a backdrop in the
 ui selects all the nodes positioned on it, and moving it moves
 them with it.
 
-## user 
+## user
 
  Container for user-defined plugs. Nodes
 should never make their own plugs here,
-so users are free to do as they wish. 
+so users are free to do as they wish.
 
-## title 
+## title
 
  The title for the backdrop - this will be displayed at
-the top of the backdrop. 
+the top of the backdrop.
 
-## scale 
+## scale
 
- Controls the size of the backdrop text. 
+ Controls the size of the backdrop text.
 
-## description 
+## description
 
  Text describing the contents of the backdrop -
-this will be displayed below the title. 
+this will be displayed below the title.
 

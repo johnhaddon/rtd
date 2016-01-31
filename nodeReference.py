@@ -13,7 +13,19 @@ def plugs( node ) :
 
 		result = ""
 		for plug in parent.children( Gaffer.Plug ) :
-			result += "## %s \n\n %s \n\n" % ( plug.relativeName( node ), Gaffer.Metadata.plugValue( plug, "description" ) )
+
+			if plug.getName().startswith( "__" ) :
+				continue
+
+			description = Gaffer.Metadata.plugValue( plug, "description" )
+			if not description :
+				continue
+
+			relativeName = plug.relativeName( node )
+			result += "##%s %s\n\n %s\n\n" % ( "#" * relativeName.count( "." ), relativeName, description )
+
+			if type( plug ) in ( Gaffer.Plug, Gaffer.ValuePlug, Gaffer.CompoundDataPlug ) :
+				result += walk( plug )
 
 		return result
 

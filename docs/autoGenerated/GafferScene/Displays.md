@@ -6,25 +6,25 @@ outputs can be defined within the UI and also via the
 be predefined at startup via a config file - see
 $GAFFER_ROOT/startup/gui/outputs.py for an example.
 
-## user 
+## user
 
  Container for user-defined plugs. Nodes
 should never make their own plugs here,
-so users are free to do as they wish. 
+so users are free to do as they wish.
 
-## out 
+## out
 
- The processed output scene. 
+ The processed output scene.
 
-## enabled 
+## enabled
 
- The on/off state of the node. When it is off, the node outputs the input scene unchanged. 
+ The on/off state of the node. When it is off, the node outputs the input scene unchanged.
 
-## in 
+## in
 
- The input scene 
+ The input scene
 
-## outputs 
+## outputs
 
- The outputs defined by this node. 
+ The outputs defined by this node.
 

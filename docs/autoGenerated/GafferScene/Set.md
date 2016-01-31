@@ -5,25 +5,25 @@ to locations within the scene. After creation, sets can be used
 by the SetFilter to limit scene operations to only the members of
 a particular set.
 
-## user 
+## user
 
  Container for user-defined plugs. Nodes
 should never make their own plugs here,
-so users are free to do as they wish. 
+so users are free to do as they wish.
 
-## out 
+## out
 
- The processed output scene. 
+ The processed output scene.
 
-## enabled 
+## enabled
 
- The on/off state of the node. When it is off, the node outputs the input scene unchanged. 
+ The on/off state of the node. When it is off, the node outputs the input scene unchanged.
 
-## in 
+## in
 
- The input scene 
+ The input scene
 
-## mode 
+## mode
 
  Create mode creates a new set containing only the
 specified paths. If a set with the same name already
@@ -35,17 +35,13 @@ not exist yet, this is the same as create mode.
 
 Remove mode removes the specified paths from an
 existing set. If the set does not exist yet, nothing
-is done. 
+is done.
 
-## name 
+## name
 
- The name of the set that will be created or edited. 
+ The name of the set that will be created or edited.
 
-## paths 
+## paths
 
- The paths to be added to or removed from the set. 
-
-## __pathMatcher 
-
- None 
+ The paths to be added to or removed from the set.
 

@@ -10,29 +10,29 @@ boxes should be stored explicitly in the Alembic cache, or the
 Cortex SceneCache (.scc) format should be used instead, since it
 always stores accurate bounds.
 
-## user 
+## user
 
  Container for user-defined plugs. Nodes
 should never make their own plugs here,
-so users are free to do as they wish. 
+so users are free to do as they wish.
 
-## out 
+## out
 
- The output scene. 
+ The output scene.
 
-## enabled 
+## enabled
 
  The on/off state of the node. When it is off, the node outputs
-an empty scene. 
+an empty scene.
 
-## fileName 
+## fileName
 
  The path to the .abc file to load. Both
-older HDF5 and newer Ogawa caches are supported. 
+older HDF5 and newer Ogawa caches are supported.
 
-## refreshCount 
+## refreshCount
 
  Can be incremented to invalidate Gaffer's memory
 cache and force a reload if the .abc file is
-changed on disk. 
+changed on disk.
 

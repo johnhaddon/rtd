@@ -3,13 +3,13 @@
 Schedules execution of task graphs on the local machine. Tasks
 may be dispatched in the background to keep the UI responsive.
 
-## user 
+## user
 
  Container for user-defined plugs. Nodes
 should never make their own plugs here,
-so users are free to do as they wish. 
+so users are free to do as they wish.
 
-## framesMode 
+## framesMode
 
  Determines the active frame range to be dispatched as
 follows :
@@ -18,27 +18,27 @@ follows :
   - FullRange uses the outer handles of the timeline
     (i.e. the full range of the script).
   - CustomRange uses a user defined range, as specified by
-    the frameRange plug. 
+    the frameRange plug.
 
-## frameRange 
+## frameRange
 
- The frame range to be used when framedMode is "CustomRange". 
+ The frame range to be used when framedMode is "CustomRange".
 
-## jobName 
+## jobName
 
- A descriptive name for the job. 
+ A descriptive name for the job.
 
-## jobsDirectory 
+## jobsDirectory
 
- A directory to store temporary files used by the dispatcher. 
+ A directory to store temporary files used by the dispatcher.
 
-## executeInBackground 
+## executeInBackground
 
  Executes the dispatched tasks in separate processes via a
-background thread. 
+background thread.
 
-## ignoreScriptLoadErrors 
+## ignoreScriptLoadErrors
 
  Ignores errors loading the script when executing in the background.
-This is not recommended - fix the problem instead. 
+This is not recommended - fix the problem instead.
 

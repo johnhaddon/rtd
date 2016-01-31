@@ -4,33 +4,33 @@ Calculates minimum, maximum and average colours for a region of
 an image. These outputs can then be used to drive other plugs
 within the node graph.
 
-## user 
+## user
 
  Container for user-defined plugs. Nodes
 should never make their own plugs here,
-so users are free to do as they wish. 
+so users are free to do as they wish.
 
-## in 
+## in
 
- The input image to be analysed. 
+ The input image to be analysed.
 
-## channels 
+## channels
 
- The names of the channels to be analysed. 
+ The names of the channels to be analysed.
 
-## regionOfInterest 
+## regionOfInterest
 
- The region of the image to be analysed. 
+ The region of the image to be analysed.
 
-## average 
+## average
 
- The per-channel mean values computed from the input image region. 
+ The per-channel mean values computed from the input image region.
 
-## min 
+## min
 
- The per-channel minimum values computed from the input image region. 
+ The per-channel minimum values computed from the input image region.
 
-## max 
+## max
 
- The per-channel maximum values computed from the input image region. 
+ The per-channel maximum values computed from the input image region.
 

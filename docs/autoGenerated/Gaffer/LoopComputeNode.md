@@ -2,9 +2,9 @@
 
 Applies a node network to an input iteratively.
 
-## user 
+## user
 
  Container for user-defined plugs. Nodes
 should never make their own plugs here,
-so users are free to do as they wish. 
+so users are free to do as they wish.
 

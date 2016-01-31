@@ -19,43 +19,39 @@ on a SceneSwitch node, to choose randomly between several
 instances, but it can be used to drive _any_ property of
 the upstream graph.
 
-## user 
+## user
 
  Container for user-defined plugs. Nodes
 should never make their own plugs here,
-so users are free to do as they wish. 
+so users are free to do as they wish.
 
-## out 
+## out
 
- The processed output scene. 
+ The processed output scene.
 
-## enabled 
+## enabled
 
- The on/off state of the node. When it is off, the node outputs the input scene unchanged. 
+ The on/off state of the node. When it is off, the node outputs the input scene unchanged.
 
-## in 
+## in
 
- The input scene 
+ The input scene
 
-## parent 
+## parent
 
  The object on which to make the instances. This
 must have a "P" primitive variable specifying the
-location of each instance. 
+location of each instance.
 
-## __mapping 
-
- None 
-
-## name 
+## name
 
  The name of the location the instances will be
 generated below. This will be parented directly
-under the parent location. 
+under the parent location.
 
-## instance 
+## instance
 
  The scene to be instanced. Use the ${instancer:id}
 variable in the upstream graph to create per-instance
-variations. 
+variations.
 

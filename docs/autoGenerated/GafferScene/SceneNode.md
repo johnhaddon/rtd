@@ -3,18 +3,18 @@
 The base type for all nodes which are capable of generating a
 hierarchical scene.
 
-## user 
+## user
 
  Container for user-defined plugs. Nodes
 should never make their own plugs here,
-so users are free to do as they wish. 
+so users are free to do as they wish.
 
-## out 
+## out
 
- The output scene. 
+ The output scene.
 
-## enabled 
+## enabled
 
  The on/off state of the node. When it is off, the node outputs
-an empty scene. 
+an empty scene.
 

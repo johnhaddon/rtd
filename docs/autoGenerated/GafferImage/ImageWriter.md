@@ -4,100 +4,196 @@ Writes image files to disk using OpenImageIO. All file
 types supported by OpenImageIO are supported by the
 ImageWriter.
 
-## user 
+## user
 
  Container for user-defined plugs. Nodes
 should never make their own plugs here,
-so users are free to do as they wish. 
+so users are free to do as they wish.
 
-## preTasks 
+## preTasks
 
  Input connections to upstream nodes which must be
-executed before this node. 
+executed before this node.
 
-## postTasks 
+## postTasks
 
  Input connections to nodes which must be
 executed after this node, but which don't
-need to be executed before downstream nodes. 
+need to be executed before downstream nodes.
 
-## task 
+## task
 
  Output connections to downstream nodes which must
-not be executed until after this node. 
+not be executed until after this node.
 
-## dispatcher 
+## dispatcher
 
  Container for custom plugs which dispatchers use to
-control their behaviour. 
+control their behaviour.
 
-## in 
+### dispatcher.batchSize
 
- The image to be written to disk. 
+ Maximum number of frames to batch together when dispatching tasks.
 
-## fileName 
+### dispatcher.immediate
+
+ Causes this node to be executed immediately upon dispatch,
+rather than have its execution be scheduled normally by
+the dispatcher. For instance, when using the LocalDispatcher,
+the node will be executed immediately in the dispatching process
+and not in a background process as usual.
+
+When a node is made immediate, all upstream nodes are automatically
+considered to be immediate too, regardless of their settings.
+
+## in
+
+ The image to be written to disk.
+
+## fileName
 
  The name of the file to be written. File sequences with
 arbitrary padding may be specified using the '#' character
-as a placeholder for the frame numbers. 
+as a placeholder for the frame numbers.
 
-## channels 
+## channels
 
- The channels to be written to the file. 
+ The channels to be written to the file.
 
-## out 
+## out
 
- A pass-through of the input image. 
+ A pass-through of the input image.
 
-## openexr 
+## openexr
 
- Format options specific to OpenEXR files. 
+ Format options specific to OpenEXR files.
 
-## dpx 
+### openexr.mode
 
- Format options specific to DPX files. 
+ The write mode for the OpenEXR file - scanline or tiled data.
 
-## tiff 
+### openexr.compression
 
- Format options specific to TIFF files. 
+ The compression method to use when writing the OpenEXR file.
 
-## field3d 
+### openexr.dataType
 
- Format options specific to Field3D files. 
+ The data type to be written to the OpenEXR file.
 
-## fits 
+## dpx
 
- Format options specific to FITS files. 
+ Format options specific to DPX files.
 
-## iff 
+### dpx.dataType
 
- Format options specific to IFF files. 
+ The data type to be written to the DPX file.
 
-## jpeg 
+## tiff
 
- Format options specific to Jpeg files. 
+ Format options specific to TIFF files.
 
-## jpeg2000 
+### tiff.mode
 
- Format options specific to Jpeg2000 files. 
+ The write mode for the TIFF file - scanline or tiled data.
 
-## png 
+### tiff.compression
 
- Format options specific to PNG files. 
+ The compression method to use when writing the TIFF file.
 
-## rla 
+### tiff.dataType
 
- Format options specific to RLA files. 
+ The data type to be written to the TIFF file.
 
-## sgi 
+## field3d
 
- Format options specific to SGI files. 
+ Format options specific to Field3D files.
 
-## targa 
+### field3d.mode
 
- Format options specific to Targa files. 
+ The write mode for the Field3D file - scanline or tiled data.
 
-## webp 
+### field3d.dataType
 
- Format options specific to WebP files. 
+ The data type to be written to the Field3D file.
+
+## fits
+
+ Format options specific to FITS files.
+
+### fits.dataType
+
+ The data type to be written to the FITS file.
+
+## iff
+
+ Format options specific to IFF files.
+
+### iff.mode
+
+ The write mode for the IFF file - scanline or tiled data.
+
+## jpeg
+
+ Format options specific to Jpeg files.
+
+### jpeg.compressionQuality
+
+ The compression quality for the Jpeg file to be written.
+A value between 0 (low quality, high compression) and
+100 (high quality, low compression).
+
+## jpeg2000
+
+ Format options specific to Jpeg2000 files.
+
+### jpeg2000.dataType
+
+ The data type to be written to the Jpeg2000 file.
+
+## png
+
+ Format options specific to PNG files.
+
+### png.compression
+
+ The compression method to use when writing the PNG file.
+
+### png.compressionLevel
+
+ The compression level of the PNG file. This is a value between
+0 (no compression) and 9 (most compression).
+
+## rla
+
+ Format options specific to RLA files.
+
+### rla.dataType
+
+ The data type to be written to the RLA file.
+
+## sgi
+
+ Format options specific to SGI files.
+
+### sgi.dataType
+
+ The data type to be written to the SGI file.
+
+## targa
+
+ Format options specific to Targa files.
+
+### targa.compression
+
+ The compression method to use when writing the Targa file.
+
+## webp
+
+ Format options specific to WebP files.
+
+### webp.compressionQuality
+
+ The compression quality for the WebP file to be written.
+A value between 0 (low quality, high compression) and
+100 (high quality, low compression).
 

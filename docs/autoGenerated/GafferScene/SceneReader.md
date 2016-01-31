@@ -2,34 +2,34 @@
 
 Reads scenes in any of the formats supported by Cortex's SceneInterface.
 
-## user 
+## user
 
  Container for user-defined plugs. Nodes
 should never make their own plugs here,
-so users are free to do as they wish. 
+so users are free to do as they wish.
 
-## out 
+## out
 
- The output scene. 
+ The output scene.
 
-## enabled 
+## enabled
 
  The on/off state of the node. When it is off, the node outputs
-an empty scene. 
+an empty scene.
 
-## fileName 
+## fileName
 
  The name of the file to be loaded. The file can be
-in any of the formats supported by Cortex's SceneInterfaces. 
+in any of the formats supported by Cortex's SceneInterfaces.
 
-## refreshCount 
+## refreshCount
 
  May be incremented to force a reload if the file has
 changed on disk - otherwise old contents may still
-be loaded via Gaffer's cache. 
+be loaded via Gaffer's cache.
 
-## tags 
+## tags
 
  Limits the parts of the scene loaded to only those
-with a specific set of tags. 
+with a specific set of tags.
 

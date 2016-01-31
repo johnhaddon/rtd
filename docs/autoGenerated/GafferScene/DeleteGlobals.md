@@ -6,30 +6,30 @@ the DeleteOutputs and DeleteOptions nodes respectively,
 as they provide improved interfaces for their specific
 tasks.
 
-## user 
+## user
 
  Container for user-defined plugs. Nodes
 should never make their own plugs here,
-so users are free to do as they wish. 
+so users are free to do as they wish.
 
-## out 
+## out
 
- The processed output scene. 
+ The processed output scene.
 
-## enabled 
+## enabled
 
- The on/off state of the node. When it is off, the node outputs the input scene unchanged. 
+ The on/off state of the node. When it is off, the node outputs the input scene unchanged.
 
-## in 
+## in
 
- The input scene 
+ The input scene
 
-## names 
+## names
 
  The names of globals to be removed. Names should be
-separated by spaces and can use Gaffer's standard wildcards. 
+separated by spaces and can use Gaffer's standard wildcards.
 
-## invertNames 
+## invertNames
 
- When on, matching names are kept, and non-matching names are removed. 
+ When on, matching names are kept, and non-matching names are removed.
 

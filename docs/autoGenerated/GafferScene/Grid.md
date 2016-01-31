@@ -6,70 +6,70 @@ but is also included as a node in case it might be
 useful, perhaps for placing a grid in renders done
 using the OpenGLRender node.
 
-## user 
+## user
 
  Container for user-defined plugs. Nodes
 should never make their own plugs here,
-so users are free to do as they wish. 
+so users are free to do as they wish.
 
-## out 
+## out
 
- The output scene. 
+ The output scene.
 
-## enabled 
+## enabled
 
  The on/off state of the node. When it is off, the node outputs
-an empty scene. 
+an empty scene.
 
-## name 
+## name
 
- The name of the grid. 
+ The name of the grid.
 
-## transform 
+## transform
 
- The transform applied to the grid. 
+ The transform applied to the grid.
 
-## dimensions 
+## dimensions
 
  The size of the grid in the x and y
 axes. Use the transform to rotate the
-grid into a different plane. 
+grid into a different plane.
 
-## spacing 
+## spacing
 
  The size of the space between adjacent lines
-in the grid. 
+in the grid.
 
-## gridColor 
+## gridColor
 
  The colour of the lines forming the main part
-of the grid. 
+of the grid.
 
-## centerColor 
+## centerColor
 
  The colour of the two lines forming the central
-cross of the grid. 
+cross of the grid.
 
-## borderColor 
+## borderColor
 
  The colour of the lines forming the border
-of the grid. 
+of the grid.
 
-## gridPixelWidth 
+## gridPixelWidth
 
  The width of the lines forming the main part
 of the grid. This width applies only to the
-OpenGL representation of the grid. 
+OpenGL representation of the grid.
 
-## centerPixelWidth 
+## centerPixelWidth
 
  The width of the two lines forming the central
 cross of the grid. This width applies only to the
-OpenGL representation of the grid. 
+OpenGL representation of the grid.
 
-## borderPixelWidth 
+## borderPixelWidth
 
  The width of the lines forming the border
 of the grid. This width applies only to the
-OpenGL representation of the grid. 
+OpenGL representation of the grid.
 

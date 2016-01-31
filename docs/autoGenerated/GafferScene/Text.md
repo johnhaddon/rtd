@@ -3,46 +3,42 @@
 Creates an object containing a polygon representation
 of an arbitrary string of text.
 
-## user 
+## user
 
  Container for user-defined plugs. Nodes
 should never make their own plugs here,
-so users are free to do as they wish. 
+so users are free to do as they wish.
 
-## out 
+## out
 
- The output scene. 
+ The output scene.
 
-## enabled 
+## enabled
 
  The on/off state of the node. When it is off, the node outputs
-an empty scene. 
+an empty scene.
 
-## name 
+## name
 
- The name of the object in the output scene. 
+ The name of the object in the output scene.
 
-## sets 
+## sets
 
  A list of sets to include the object in. The
-names should be separated by spaces. 
+names should be separated by spaces.
 
-## transform 
+## transform
 
- The transform applied to the object. 
+ The transform applied to the object.
 
-## __source 
-
- None 
-
-## text 
+## text
 
  The text to output. This is triangulated into a mesh
-representation using the specified font. 
+representation using the specified font.
 
-## font 
+## font
 
  The font to use - this should be a .ttf font file which
 is located on the paths specified by the IECORE_FONT_PATHS
-environment variable. 
+environment variable.
 

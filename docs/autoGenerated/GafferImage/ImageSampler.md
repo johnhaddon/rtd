@@ -2,17 +2,17 @@
 
 Samples image colour at a specified pixel location.
 
-## user 
+## user
 
  Container for user-defined plugs. Nodes
 should never make their own plugs here,
-so users are free to do as they wish. 
+so users are free to do as they wish.
 
-## image 
+## image
 
- The image to be sampled. 
+ The image to be sampled.
 
-## pixel 
+## pixel
 
  The coordinates of the pixel to sample. These can have
 fractional values and bilinear interpolation will be used
@@ -20,9 +20,9 @@ to interpolate between adjacent pixels.
 
 Note though that the coordinates at pixel centres are not integers.
 For example, the centre of the bottom left pixel of an image is
-at 0.5, 0.5. 
+at 0.5, 0.5.
 
-## color 
+## color
 
- The sampled colour. 
+ The sampled colour.
 

@@ -3,37 +3,78 @@
 Applies appleseed attributes to objects
 in the scene.
 
-## user 
+## user
 
  Container for user-defined plugs. Nodes
 should never make their own plugs here,
-so users are free to do as they wish. 
+so users are free to do as they wish.
 
-## out 
+## out
 
- The processed output scene. 
+ The processed output scene.
 
-## enabled 
+## enabled
 
- The on/off state of the node. When it is off, the node outputs the input scene unchanged. 
+ The on/off state of the node. When it is off, the node outputs the input scene unchanged.
 
-## in 
+## in
 
- The input scene 
+ The input scene
 
-## filter 
+## filter
 
  The filter used to control which parts of the scene are
-processed. A Filter node should be connected here. 
+processed. A Filter node should be connected here.
 
-## attributes 
+## attributes
 
  The attributes to be applied - arbitrary numbers of user defined
 attributes may be added as children of this plug via the user
-interface, or using the CompoundDataPlug API via python. 
+interface, or using the CompoundDataPlug API via python.
 
-## global 
+### attributes.cameraVisibility
+
+ Whether or not the object is visible to camera
+rays. To hide an object completely, use the
+visibility settings on the StandardAttributes
+node instead.
+
+### attributes.lightVisibility
+
+ Whether or not the object is visible to light
+rays (whether or not it is visible to photons).
+
+### attributes.shadowVisibility
+
+ Whether or not the object is visible to shadow
+rays (whether or not it casts shadows).
+
+### attributes.diffuseVisibility
+
+ Whether or not the object is visible to diffuse
+rays - whether it casts bounce light or not.
+
+### attributes.specularVisibility
+
+ Whether or not the object is visible in
+tight mirror reflections and refractions.
+
+### attributes.glossyVisibility
+
+ Whether or not the object is visible in
+soft specular reflections and refractions.
+
+### attributes.shadingSamples
+
+ Number of samples to use when computing shading for the object.
+
+### attributes.alphaMap
+
+ Specifies a grayscale texture than can be used to efficiently discard
+unwanted parts of the surface of the object while computing ray intersections.
+
+## global
 
  Causes the attributes to be applied to the scene globals
-instead of the individual locations defined by the filter. 
+instead of the individual locations defined by the filter.
 

@@ -8,59 +8,59 @@ The random values are generated from a seed and a context
 variable - to get useful variation either the seed or the
 value of the context variable must be varied too.
 
-## user 
+## user
 
  Container for user-defined plugs. Nodes
 should never make their own plugs here,
-so users are free to do as they wish. 
+so users are free to do as they wish.
 
-## seed 
+## seed
 
  Seed for the random number generator. Different seeds
 produce different random numbers. When controlling two
 different properties using the same context variable,
 different seeds may be used to ensure that the generated
-values are different. 
+values are different.
 
-## contextEntry 
+## contextEntry
 
  The most important plug for achieving interesting variation.
 Should be set to the name of a context variable which will
 be different for each evaluation of the node. Good examples
 are "scene:path" to generate a different value per scene
-location, or "frame" to generate a different value per frame. 
+location, or "frame" to generate a different value per frame.
 
-## floatRange 
+## floatRange
 
  The minimum and maximum values that will be generated for the
-outFloat plug. 
+outFloat plug.
 
-## outFloat 
+## outFloat
 
  Random floating point output derived from seed, context variable
-and float range plugs. 
+and float range plugs.
 
-## baseColor 
+## baseColor
 
  Used as the basis for the random colours generated for the
 outColor plug. All colours start with this value and then
 have a random HSV variation applied, using the ranges specified
-below. 
+below.
 
-## hue 
+## hue
 
- The +- range over which the hue of the base colour is varied. 
+ The +- range over which the hue of the base colour is varied.
 
-## saturation 
+## saturation
 
- The +- range over which the saturation of the base colour is varied. 
+ The +- range over which the saturation of the base colour is varied.
 
-## value 
+## value
 
- The +- range over which the value of the base colour is varied. 
+ The +- range over which the value of the base colour is varied.
 
-## outColor 
+## outColor
 
  Random colour output derived from seed, context variable, base
-colour, hue, saturation and value plugs. 
+colour, hue, saturation and value plugs.
 

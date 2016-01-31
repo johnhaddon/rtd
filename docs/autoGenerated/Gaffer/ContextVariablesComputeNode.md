@@ -2,18 +2,18 @@
 
 Adds variables which can be referenced by upstream expressions.
 
-## user 
+## user
 
  Container for user-defined plugs. Nodes
 should never make their own plugs here,
-so users are free to do as they wish. 
+so users are free to do as they wish.
 
-## enabled 
+## enabled
 
- Turns the node on and off. 
+ Turns the node on and off.
 
-## variables 
+## variables
 
  The variables to be added - arbitrary numbers of variables
-can be added here. 
+can be added here.
 

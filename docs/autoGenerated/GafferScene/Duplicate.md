@@ -4,41 +4,37 @@ Duplicates a part of the scene. The duplicates
 are parented alongside the original, and have
 a transform applied to them.
 
-## user 
+## user
 
  Container for user-defined plugs. Nodes
 should never make their own plugs here,
-so users are free to do as they wish. 
+so users are free to do as they wish.
 
-## out 
+## out
 
- The processed output scene. 
+ The processed output scene.
 
-## enabled 
+## enabled
 
- The on/off state of the node. When it is off, the node outputs the input scene unchanged. 
+ The on/off state of the node. When it is off, the node outputs the input scene unchanged.
 
-## in 
+## in
 
- The input scene 
+ The input scene
 
-## parent 
+## parent
 
- For internal use only. 
+ For internal use only.
 
-## __mapping 
+## target
 
- None 
+ The part of the scene to be duplicated.
 
-## target 
+## copies
 
- The part of the scene to be duplicated. 
+ The number of copies to be made.
 
-## copies 
-
- The number of copies to be made. 
-
-## name 
+## name
 
  The name given to the copies. If this
 is left empty, the name from the target
@@ -47,19 +43,11 @@ a numeric suffix applied to distinguish
 between the different copies, unless only a
 single copy is being made. Even in the case
 of a single copy, a suffix will be applied
-if necessary to keep the names unique. 
+if necessary to keep the names unique.
 
-## transform 
+## transform
 
  The transform to be applied to the copies. The transform
 is applied iteratively, so the second copy is transformed
-twice, the third copy is transformed three times and so on. 
-
-## __outParent 
-
- None 
-
-## __outChildNames 
-
- None 
+twice, the third copy is transformed three times and so on.
 

@@ -2,29 +2,29 @@
 
 A node for removing whole branches from the scene hierarchy.
 
-## user 
+## user
 
  Container for user-defined plugs. Nodes
 should never make their own plugs here,
-so users are free to do as they wish. 
+so users are free to do as they wish.
 
-## out 
+## out
 
- The processed output scene. 
+ The processed output scene.
 
-## enabled 
+## enabled
 
- The on/off state of the node. When it is off, the node outputs the input scene unchanged. 
+ The on/off state of the node. When it is off, the node outputs the input scene unchanged.
 
-## in 
+## in
 
- The input scene 
+ The input scene
 
-## filter 
+## filter
 
- The branches to prune. The specified locations and all locations below them will be removed from the scene. 
+ The branches to prune. The specified locations and all locations below them will be removed from the scene.
 
-## adjustBounds 
+## adjustBounds
 
- Computes new tightened bounding boxes taking into account the removed locations. This can be an expensive operation - turn on with care. 
+ Computes new tightened bounding boxes taking into account the removed locations. This can be an expensive operation - turn on with care.
 

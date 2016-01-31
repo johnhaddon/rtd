@@ -5,48 +5,44 @@ This can be particularly useful in conjunction with
 the Instancer, which can then apply instances to
 each point.
 
-## user 
+## user
 
  Container for user-defined plugs. Nodes
 should never make their own plugs here,
-so users are free to do as they wish. 
+so users are free to do as they wish.
 
-## out 
+## out
 
- The processed output scene. 
+ The processed output scene.
 
-## enabled 
+## enabled
 
- The on/off state of the node. When it is off, the node outputs the input scene unchanged. 
+ The on/off state of the node. When it is off, the node outputs the input scene unchanged.
 
-## in 
+## in
 
- The input scene 
+ The input scene
 
-## parent 
+## parent
 
  The location of the mesh to scatter the
 points over. The generated points will
-be parented under this location. 
+be parented under this location.
 
-## __mapping 
-
- None 
-
-## name 
+## name
 
  The name given to the object generated -
 this will be placed under the parent in
-the scene hierarchy. 
+the scene hierarchy.
 
-## density 
+## density
 
  The number of points per unit area of the mesh,
-measured in object space. 
+measured in object space.
 
-## pointType 
+## pointType
 
  The render type of the points. This defaults to
 "gl:point" so that the points are rendered in a
-lightweight manner in the viewport. 
+lightweight manner in the viewport.
 

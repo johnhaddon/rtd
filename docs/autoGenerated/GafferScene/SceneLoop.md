@@ -6,46 +6,46 @@ previous and next plugs. The input scene is sent around this
 loop for a set number of iterations and then emerges as the
 output scene.
 
-## user 
+## user
 
  Container for user-defined plugs. Nodes
 should never make their own plugs here,
-so users are free to do as they wish. 
+so users are free to do as they wish.
 
-## out 
+## out
 
- The processed output scene. 
+ The processed output scene.
 
-## enabled 
+## enabled
 
- The on/off state of the node. When it is off, the node outputs the input scene unchanged. 
+ The on/off state of the node. When it is off, the node outputs the input scene unchanged.
 
-## in 
+## in
 
- The input scene 
+ The input scene
 
-## next 
+## next
 
  The scene to be used as the start of the next iteration of
-the loop. 
+the loop.
 
-## previous 
+## previous
 
  The result from the previous iteration of the loop, or
 the input scene if no iterations have been performed yet.
 The content of the loop is defined by feeding this previous
 result through the scene processing nodes of choice and back
-around into the next plug. 
+around into the next plug.
 
-## iterations 
+## iterations
 
  The number of times the loop is applied to form the output
-scene. 
+scene.
 
-## indexVariable 
+## indexVariable
 
  The name of a context variable used to specify the index
 of the current iteration. This can be referenced from
 expressions within the loop network to modify the operations
-performed during each iteration of the loop. 
+performed during each iteration of the loop.
 

@@ -3,23 +3,23 @@
 Chooses locations by matching them against a list of
 paths.
 
-## user 
+## user
 
  Container for user-defined plugs. Nodes
 should never make their own plugs here,
-so users are free to do as they wish. 
+so users are free to do as they wish.
 
-## enabled 
+## enabled
 
  The on/off state of the filter. When it is off, the
-filter does not match any locations. 
+filter does not match any locations.
 
-## out 
+## out
 
  The result of the filter. This should be connected into
-the "filter" plug of a FilteredSceneProcessor. 
+the "filter" plug of a FilteredSceneProcessor.
 
-## paths 
+## paths
 
  The list of paths to the locations to be matched by the filter.
 A path is formed by a sequence of names separated by '/', and
@@ -39,9 +39,5 @@ The "..." wildcard matches any sequence of names, and can be
 used to match locations no matter where they are parented in
 the hierarchy.
 
- - /.../house matches /house, /street/house and /city/street/house. 
-
-## __pathMatcher 
-
- None 
+ - /.../house matches /house, /street/house and /city/street/house.
 

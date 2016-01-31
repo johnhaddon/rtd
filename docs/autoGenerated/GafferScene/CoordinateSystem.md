@@ -10,35 +10,31 @@ have two main uses :
   solid textures. The full path to the location of the coordinate
   system should be used to refer to it within shaders.
 
-## user 
+## user
 
  Container for user-defined plugs. Nodes
 should never make their own plugs here,
-so users are free to do as they wish. 
+so users are free to do as they wish.
 
-## out 
+## out
 
- The output scene. 
+ The output scene.
 
-## enabled 
+## enabled
 
  The on/off state of the node. When it is off, the node outputs
-an empty scene. 
+an empty scene.
 
-## name 
+## name
 
- The name of the object in the output scene. 
+ The name of the object in the output scene.
 
-## sets 
+## sets
 
  A list of sets to include the object in. The
-names should be separated by spaces. 
+names should be separated by spaces.
 
-## transform 
+## transform
 
- The transform applied to the object. 
-
-## __source 
-
- None 
+ The transform applied to the object.
 

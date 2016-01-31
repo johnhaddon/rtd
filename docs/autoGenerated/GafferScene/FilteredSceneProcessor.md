@@ -3,26 +3,26 @@
 The base type for scene processors which use a Filter node to control
 which part of the scene is affected.
 
-## user 
+## user
 
  Container for user-defined plugs. Nodes
 should never make their own plugs here,
-so users are free to do as they wish. 
+so users are free to do as they wish.
 
-## out 
+## out
 
- The processed output scene. 
+ The processed output scene.
 
-## enabled 
+## enabled
 
- The on/off state of the node. When it is off, the node outputs the input scene unchanged. 
+ The on/off state of the node. When it is off, the node outputs the input scene unchanged.
 
-## in 
+## in
 
- The input scene 
+ The input scene
 
-## filter 
+## filter
 
  The filter used to control which parts of the scene are
-processed. A Filter node should be connected here. 
+processed. A Filter node should be connected here.
 

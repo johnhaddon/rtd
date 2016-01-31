@@ -2,31 +2,31 @@
 
 A node for extracting a specific branch from a scene.
 
-## user 
+## user
 
  Container for user-defined plugs. Nodes
 should never make their own plugs here,
-so users are free to do as they wish. 
+so users are free to do as they wish.
 
-## out 
+## out
 
- The processed output scene. 
+ The processed output scene.
 
-## enabled 
+## enabled
 
- The on/off state of the node. When it is off, the node outputs the input scene unchanged. 
+ The on/off state of the node. When it is off, the node outputs the input scene unchanged.
 
-## in 
+## in
 
- The input scene 
+ The input scene
 
-## root 
+## root
 
  The location to become the new root for the output scene.
 All locations below this will be kept, and all others will
-be discarded. 
+be discarded.
 
-## includeRoot 
+## includeRoot
 
  Causes the root location to also be kept in the
 output scene, in addition to its children. For
@@ -34,5 +34,5 @@ instance, if the scene contains only
 /city/street/house and the root is set to /city/street,
 then the new scene will by default contain only /house -
 but the includeRoot setting will cause it to contain
-/street/house instead. 
+/street/house instead.
 

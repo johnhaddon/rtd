@@ -5,35 +5,35 @@ Those locations will then inherit the attribute
 values from ancestor locations instead, or will fall
 back to using the default attribute value.
 
-## user 
+## user
 
  Container for user-defined plugs. Nodes
 should never make their own plugs here,
-so users are free to do as they wish. 
+so users are free to do as they wish.
 
-## out 
+## out
 
- The processed output scene. 
+ The processed output scene.
 
-## enabled 
+## enabled
 
- The on/off state of the node. When it is off, the node outputs the input scene unchanged. 
+ The on/off state of the node. When it is off, the node outputs the input scene unchanged.
 
-## in 
+## in
 
- The input scene 
+ The input scene
 
-## filter 
+## filter
 
  The filter used to control which parts of the scene are
-processed. A Filter node should be connected here. 
+processed. A Filter node should be connected here.
 
-## names 
+## names
 
  The names of attributes to be removed. Names should be
-separated by spaces and can use Gaffer's standard wildcards. 
+separated by spaces and can use Gaffer's standard wildcards.
 
-## invertNames 
+## invertNames
 
- When on, matching names are kept, and non-matching names are removed. 
+ When on, matching names are kept, and non-matching names are removed.
 

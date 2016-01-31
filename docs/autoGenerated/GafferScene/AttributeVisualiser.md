@@ -3,36 +3,36 @@
 Visualises attribute values by applying a constant
 shader to display them as a colour.
 
-## user 
+## user
 
  Container for user-defined plugs. Nodes
 should never make their own plugs here,
-so users are free to do as they wish. 
+so users are free to do as they wish.
 
-## out 
+## out
 
- The processed output scene. 
+ The processed output scene.
 
-## enabled 
+## enabled
 
- The on/off state of the node. When it is off, the node outputs the input scene unchanged. 
+ The on/off state of the node. When it is off, the node outputs the input scene unchanged.
 
-## in 
+## in
 
- The input scene 
+ The input scene
 
-## filter 
+## filter
 
  The filter used to control which parts of the scene are
-processed. A Filter node should be connected here. 
+processed. A Filter node should be connected here.
 
-## attributeName 
+## attributeName
 
  The name of the attribute to be visualised. The value of the
 attribute will be converted to a colour using the chosen mode
-and then assigned using a constant shader. 
+and then assigned using a constant shader.
 
-## mode 
+## mode
 
  The method used to turn the attribute value into a colour for
 visualisation.
@@ -45,39 +45,39 @@ visualisation.
 - Random : This works for any attribute type - a random colour is chosen
   for each unique attribute value.
 - Shader Node Color : This only works when visualising a shader attribute. It
-  uses the node colour for the shader node which is assigned. 
+  uses the node colour for the shader node which is assigned.
 
-## min 
-
- Used in the Color and False Color modes to define the value which is mapped
-to black or the left end of the spline respectively. 
-
-## max 
+## min
 
  Used in the Color and False Color modes to define the value which is mapped
-to white or the right end of the spline respectively. 
+to black or the left end of the spline respectively.
 
-## ramp 
+## max
+
+ Used in the Color and False Color modes to define the value which is mapped
+to white or the right end of the spline respectively.
+
+## ramp
 
  Provides the colour mapping for the False Color mode. Values between min and
-max are remapped using the colours from the ramp (left to right). 
+max are remapped using the colours from the ramp (left to right).
 
-## shaderType 
+## shaderType
 
  The type of shader used to perform the visualisation. The default value
 is for an OpenGL shader which will be used in the viewport. It's possible
 to perform a visualisation for other renderers by entering a different
-shader type here. 
+shader type here.
 
-## shaderName 
+## shaderName
 
  The name of the shader used to perform the visualisation. The default value
 is for an OpenGL shader which will be used in the viewport. It's possible
 to perform a visualisation for other renderers by entering a different
-shader name here. 
+shader name here.
 
-## shaderParameter 
+## shaderParameter
 
  The name of the shader parameter used to perform the visualisation. The default
-value is for an OpenGL shader which will be used in the viewport. 
+value is for an OpenGL shader which will be used in the viewport.
 

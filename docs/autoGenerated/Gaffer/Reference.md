@@ -7,9 +7,9 @@ and as the basis for custom asset management.
 To generate a file to be referenced, build a network inside a Box
 node and then export it for referencing.
 
-## user 
+## user
 
  Container for user-defined plugs. Nodes
 should never make their own plugs here,
-so users are free to do as they wish. 
+so users are free to do as they wish.
 

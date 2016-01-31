@@ -2,35 +2,50 @@
 
 Adds variables which can be referenced by upstream expressions.
 
-## user 
+## user
 
  Container for user-defined plugs. Nodes
 should never make their own plugs here,
-so users are free to do as they wish. 
+so users are free to do as they wish.
 
-## preTasks 
+## preTasks
 
  Input connections to upstream nodes which must be
-executed before this node. 
+executed before this node.
 
-## postTasks 
+## postTasks
 
  Input connections to nodes which must be
 executed after this node, but which don't
-need to be executed before downstream nodes. 
+need to be executed before downstream nodes.
 
-## task 
+## task
 
  Output connections to downstream nodes which must
-not be executed until after this node. 
+not be executed until after this node.
 
-## dispatcher 
+## dispatcher
 
  Container for custom plugs which dispatchers use to
-control their behaviour. 
+control their behaviour.
 
-## variables 
+### dispatcher.batchSize
+
+ Maximum number of frames to batch together when dispatching tasks.
+
+### dispatcher.immediate
+
+ Causes this node to be executed immediately upon dispatch,
+rather than have its execution be scheduled normally by
+the dispatcher. For instance, when using the LocalDispatcher,
+the node will be executed immediately in the dispatching process
+and not in a background process as usual.
+
+When a node is made immediate, all upstream nodes are automatically
+considered to be immediate too, regardless of their settings.
+
+## variables
 
  The variables to be added - arbitrary numbers of variables
-can be added here. 
+can be added here.
 

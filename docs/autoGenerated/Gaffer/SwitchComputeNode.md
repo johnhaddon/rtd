@@ -3,20 +3,20 @@
 Chooses between multiple input connections, passing through the
 chosen input to the output.
 
-## user 
+## user
 
  Container for user-defined plugs. Nodes
 should never make their own plugs here,
-so users are free to do as they wish. 
+so users are free to do as they wish.
 
-## index 
+## index
 
  The index of the input which is passed through. A value
 of 0 chooses the first input, 1 the second and so on. Values
 larger than the number of available inputs wrap back around to
-the beginning. 
+the beginning.
 
-## enabled 
+## enabled
 
- Turns the node on and off. 
+ Turns the node on and off.
 

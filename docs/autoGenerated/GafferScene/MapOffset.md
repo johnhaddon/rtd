@@ -2,42 +2,42 @@
 
 Adds an offset to object texture coordinates. Provides a convenient way of looking at specific texture UDIMs.
 
-## user 
+## user
 
  Container for user-defined plugs. Nodes
 should never make their own plugs here,
-so users are free to do as they wish. 
+so users are free to do as they wish.
 
-## out 
+## out
 
- The processed output scene. 
+ The processed output scene.
 
-## enabled 
+## enabled
 
- The on/off state of the node. When it is off, the node outputs the input scene unchanged. 
+ The on/off state of the node. When it is off, the node outputs the input scene unchanged.
 
-## in 
+## in
 
- The input scene 
+ The input scene
 
-## filter 
+## filter
 
  The filter used to control which parts of the scene are
-processed. A Filter node should be connected here. 
+processed. A Filter node should be connected here.
 
-## offset 
+## offset
 
- An offset added to the texture coordinates. Note that moving the texture coordinates in the positive direction will move the texture in the negative direction. 
+ An offset added to the texture coordinates. Note that moving the texture coordinates in the positive direction will move the texture in the negative direction.
 
-## udim 
+## udim
 
- A specific UDIM to offset the texture coordinates to. The UDIM is converted to an offset which is added to the offset above. 
+ A specific UDIM to offset the texture coordinates to. The UDIM is converted to an offset which is added to the offset above.
 
-## sName 
+## sName
 
- The name of the primitive variable holding the s coordinate. 
+ The name of the primitive variable holding the s coordinate.
 
-## tName 
+## tName
 
- The name of the primitive variable holding the t coordinate. 
+ The name of the primitive variable holding the t coordinate.
 
