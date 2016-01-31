@@ -2,6 +2,7 @@ GafferAppleseed
 ===============
 
 .. toctree::
+   :maxdepth: 1
 
    AppleseedAttributes
    AppleseedLight

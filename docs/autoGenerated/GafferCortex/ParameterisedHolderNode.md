@@ -2,3 +2,21 @@
 
 Hosts Cortex Parameterised classes
 
+## user 
+
+ Container for user-defined plugs. Nodes
+should never make their own plugs here,
+so users are free to do as they wish. 
+
+## __className 
+
+ None 
+
+## __classVersion 
+
+ None 
+
+## __searchPathEnvVar 
+
+ None 
+

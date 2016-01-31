@@ -2,6 +2,7 @@ GafferCortex
 ============
 
 .. toctree::
+   :maxdepth: 1
 
    ExecutableOpHolder
    ObjectReader

@@ -2,6 +2,7 @@ GafferImage
 ===========
 
 .. toctree::
+   :maxdepth: 1
 
    Blur
    CDL

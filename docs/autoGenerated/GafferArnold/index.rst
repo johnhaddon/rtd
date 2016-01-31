@@ -2,6 +2,7 @@ GafferArnold
 ============
 
 .. toctree::
+   :maxdepth: 1
 
    ArnoldAttributes
    ArnoldLight

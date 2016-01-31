@@ -2,6 +2,7 @@ GafferScene
 ===========
 
 .. toctree::
+   :maxdepth: 1
 
    AimConstraint
    AlembicSource

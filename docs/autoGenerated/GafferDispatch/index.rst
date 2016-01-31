@@ -2,6 +2,7 @@ GafferDispatch
 ==============
 
 .. toctree::
+   :maxdepth: 1
 
    Dispatcher
    ExecutableNode

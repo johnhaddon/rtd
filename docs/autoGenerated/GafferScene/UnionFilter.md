@@ -3,3 +3,24 @@
 Combines several input filters, matching the union
 of all the locations matched by them.
 
+## user 
+
+ Container for user-defined plugs. Nodes
+should never make their own plugs here,
+so users are free to do as they wish. 
+
+## enabled 
+
+ The on/off state of the filter. When it is off, the
+filter does not match any locations. 
+
+## out 
+
+ The result of the filter. This should be connected into
+the "filter" plug of a FilteredSceneProcessor. 
+
+## in 
+
+ The filters to be combined. Any number
+of inputs may be added here. 
+

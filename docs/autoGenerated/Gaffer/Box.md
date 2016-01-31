@@ -9,3 +9,9 @@ graphs by collapsing them into sections which perform distinct tasks.
 They are also used for authoring files to be used with the Reference
 node.
 
+## user 
+
+ Container for user-defined plugs. Nodes
+should never make their own plugs here,
+so users are free to do as they wish. 
+

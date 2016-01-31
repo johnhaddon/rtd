@@ -2,6 +2,7 @@ Gaffer
 ======
 
 .. toctree::
+   :maxdepth: 1
 
    Animation
    Backdrop
