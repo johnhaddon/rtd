@@ -5,3 +5,5 @@ UI Reference
    :maxdepth: 1
 
    nodeGraph
+   scriptEditor
+
